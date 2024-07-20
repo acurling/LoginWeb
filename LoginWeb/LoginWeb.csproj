@@ -67,18 +67,36 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CapaVistas\Articulo.aspx" />
     <Content Include="CapaVistas\Inicio.aspx" />
     <Content Include="CapaVistas\Login.aspx" />
+    <Content Include="CapaVistas\Login2.aspx" />
     <Content Include="CapaVistas\p2.aspx" />
     <Content Include="CapaVistas\p3.aspx" />
+    <Content Include="CapaVistas\Servicios.aspx" />
+    <Content Include="css\contenedor.css" />
+    <Content Include="css\Loginc2Css.css" />
     <Content Include="css\logincss.css" />
     <Content Include="css\menu.css" />
     <Content Include="css\StyleSheet1.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CapaDatos\Clsarticulo.cs" />
     <Compile Include="CapaDatos\Clspermiso.cs" />
+    <Compile Include="CapaDatos\Clsservicios.cs" />
     <Compile Include="CapaDatos\Clsusuario.cs" />
+    <Compile Include="CapaDatos\DBConexion.cs" />
+    <Compile Include="CapaDatos\MensajeJavaScript.cs" />
+    <Compile Include="CapaLogica\ClaseArticulo.cs" />
+    <Compile Include="CapaLogica\ClaseServicio.cs" />
+    <Compile Include="CapaVistas\Articulo.aspx.cs">
+      <DependentUpon>Articulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaVistas\Articulo.aspx.designer.cs">
+      <DependentUpon>Articulo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CapaVistas\Inicio.aspx.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -92,6 +110,13 @@
     </Compile>
     <Compile Include="CapaVistas\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaVistas\Login2.aspx.cs">
+      <DependentUpon>Login2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaVistas\Login2.aspx.designer.cs">
+      <DependentUpon>Login2.aspx</DependentUpon>
     </Compile>
     <Compile Include="CapaVistas\p2.aspx.cs">
       <DependentUpon>p2.aspx</DependentUpon>
@@ -107,6 +132,13 @@
     <Compile Include="CapaVistas\p3.aspx.designer.cs">
       <DependentUpon>p3.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CapaVistas\Servicios.aspx.cs">
+      <DependentUpon>Servicios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaVistas\Servicios.aspx.designer.cs">
+      <DependentUpon>Servicios.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CapaVistas\Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -114,11 +146,19 @@
     <Compile Include="CapaVistas\Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
+    <Compile Include="Pagina2.Master.cs">
+      <DependentUpon>Pagina2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pagina2.Master.designer.cs">
+      <DependentUpon>Pagina2.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="CapaVistas\Site1.Master" />
     <None Include="packages.config" />
+    <Content Include="Pagina2.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -127,7 +167,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CapaLogica\" />
     <Folder Include="js\" />
   </ItemGroup>
   <PropertyGroup>

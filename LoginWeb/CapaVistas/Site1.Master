@@ -9,6 +9,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link href="../css/menu.css" rel="stylesheet" />
+    <link href="../css/contenedor.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -48,20 +49,20 @@
         <span class="link-text">USuarios</span>
       </a>
     </li>
-    <li class="navbar-item flexbox-left">
-      <a class="navbar-item-inner flexbox-left">
+    <li class="navbar-item flexbox-left" >
+      <a class="navbar-item-inner flexbox-left" href="Articulo.aspx">
         <div class="navbar-item-inner-icon-wrapper flexbox">
           <ion-icon name="pie-chart-outline"></ion-icon>
         </div>
-        <span class="link-text">Dashboard</span>
+        <span class="link-text">Articulos</span>
       </a>
     </li>
     <li class="navbar-item flexbox-left">
-      <a class="navbar-item-inner flexbox-left">
+      <a class="navbar-item-inner flexbox-left" href="Servicios.aspx">
         <div class="navbar-item-inner-icon-wrapper flexbox">
           <ion-icon name="people-outline"></ion-icon>
         </div>
-        <span class="link-text">Team</span>
+        <span class="link-text">Servicios Banco</span>
       </a>
     </li>
     <li class="navbar-item flexbox-left">
